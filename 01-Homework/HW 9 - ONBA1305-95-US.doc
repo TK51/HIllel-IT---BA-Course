@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>[#ONBA1305-36] Useful Information: Actual Currency Exchange Rate user-selected view, RBA</title>
+    <title>[#ONBA1305-95] Transfer between user&#39;s accounts</title>
     <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
         <style type="text/css">
 
@@ -78,9 +78,9 @@ hr.fullcontent
     <tr>
         <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
                             <h3 class="formtitle">
-                        [ONBA1305-36]&nbsp;<a href="https://jira.ithillel.com/browse/ONBA1305-36">Useful Information: Actual Currency Exchange Rate user-selected view, RBA</a>
+                        [ONBA1305-95]&nbsp;<a href="https://jira.ithillel.com/browse/ONBA1305-95">Transfer between user&#39;s accounts</a>
             <span class="subText">
-               Created: 28/May/21                   &nbsp;Updated: 28/May/21
+               Created: 14/Jun/21                   &nbsp;Updated: 15/Jun/21
 
                                             </span>
             </h3>
@@ -134,7 +134,7 @@ hr.fullcontent
                 <b>Priority:</b>
             </td>
             <td bgcolor="#ffffff" valign="top" nowrap>
-                Medium
+                High
             </td>
             </tr>
     <tr>
@@ -172,8 +172,8 @@ hr.fullcontent
         <td bgcolor="#f0f0f0" width="20%">
             <b>Labels:</b>
         </td>
-        <td id="labels-22908-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
-                            Currency-rate, Exchange-rate, RBA, ROMA                    </td>
+        <td id="labels-23753-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            RBA, ROMA, account                    </td>
     </tr>
     
     	<tr>
@@ -213,34 +213,54 @@ hr.fullcontent
                 <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
                                             <tr>
                             <td colspan="4" bgcolor="#f0f0f0">
-                                <b>Relates</b><br/>
+                                <b>Cloners</b><br/>
                             </td>
                         </tr>
-                                    <tr>
+                                                                <tr>
             <td>
-                relates to
+                is cloned by
             </td>
             <td>
-                <a href="https://jira.ithillel.com/browse/ONBA1305-39">
-                     ONBA1305-39                 </a>
+                <a href="https://jira.ithillel.com/browse/ONBA1305-98">
+                     ONBA1305-98                 </a>
             </td>
             <td>
-                Useful Information: Actual Currency E...
+                Transfer between user&#39;s account and a...
             </td>
             <td>
                 To Do
             </td>
         </tr>
-                                        <tr>
+            <tr>
+            <td>
+                is cloned by
+            </td>
+            <td>
+                <a href="https://jira.ithillel.com/browse/ONBA1305-96">
+                     ONBA1305-96                 </a>
+            </td>
+            <td>
+                Transfer between user&#39;s cards
+            </td>
+            <td>
+                To Do
+            </td>
+        </tr>
+                                                <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Relates</b><br/>
+                            </td>
+                        </tr>
+                                                                <tr>
             <td>
                 relates to
             </td>
             <td>
-                <a href="https://jira.ithillel.com/browse/ONBA1305-35">
-                     ONBA1305-35                 </a>
+                <a href="https://jira.ithillel.com/browse/ONBA1305-94">
+                     ONBA1305-94                 </a>
             </td>
             <td>
-                Useful Information: Actual Currency E...
+                Operations with user&#39;s account(s)
             </td>
             <td>
                 To Do
@@ -255,22 +275,19 @@ hr.fullcontent
 
                         <tr>
                 <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
-<<<<<<< HEAD
-                <td id="customfield_10102-22908-value" class="value" bgcolor="#ffffff" width="80%">
-    <a class="aui-label ghx-label-5" href="https://jira.ithillel.com/browse/ONBA1305-34">
-        MobBankApp: Informational Support
+                <td id="customfield_10102-23753-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-5" href="https://jira.ithillel.com/browse/ONBA1305-94">
+        MobBankApp: Account Operations
     </a>
-=======
-                <td id="customfield_10102-22908-value" class="value" bgcolor="#ffffff" width="80%">
-    <a class="aui-label ghx-label-5" href="https://jira.ithillel.com/browse/ONBA1305-34">
-        MobBankApp: Informational Support
-    </a>
->>>>>>> 9e15f718da53da0d10e9643268caf7085e76c058
 </td>
             </tr>
                                 <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10101-23753-value" class="value" bgcolor="#ffffff" width="80%">Доска Sprint 1</td>
+            </tr>
+                                <tr>
                 <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Story Points:</b></td>
-                <td id="customfield_10106-22908-value" class="value" bgcolor="#ffffff" width="80%">    5
+                <td id="customfield_10106-23753-value" class="value" bgcolor="#ffffff" width="80%">    8
 </td>
             </tr>
             </table>
@@ -289,16 +306,72 @@ hr.fullcontent
     <table cellpadding="0" cellspacing="0" border="0" width="100%">
     <tr>
         <td id="descriptionArea">
-            <p>As a bank customer, I want to be able to select custom currencies for finding out the current exchange rates right in the application so not to waste time looking for similar information on other resources.<br/>
-++++<br/>
-A user shall be able to familiarize him/herself with the personally selected actual exchange rates right in the Application (TBD).<br/>
-FR_5.1: Provide current up-to-date custom-selected exchange rates.</p>
+            <p><b>Context:</b> <br/>
+After successful authorization, a user shall select 'money transfer' so to be able to perform operations with funds available on accounts owned by transferring the money between accounts owned. The procedure shall provide the account 'from' together with account 'to', sum of transfer to be inserted (typed manually) by user and 'submit' UI element. A user shall verify the transfer by available verification mechanism so to finalize the transfer between accounts owned.</p>
+
+<p><b>Story:</b></p>
+
+<p>As a bank customer, I want to be able to transfer funds between my accounts, so to be able to manage them directly in the application.</p>
+
+<p><b>Preconditions:</b></p>
+<ul>
+	<li>internet connection</li>
+	<li>smartphone model supporting the application</li>
+	<li>installed application</li>
+	<li>registered user</li>
+	<li>successfully verified bank profile</li>
+	<li>successful authorization in the application</li>
+	<li>possession of two or more accounts in RBA by the same user</li>
+</ul>
+
+
+<p><b>Assumptions:</b></p>
+<ul>
+	<li>a user shall be acquainted with the main functions of his smartphone</li>
+	<li>a user shall be acquainted with the main features of the application</li>
+	<li>a user shall understand the basic principles of money transfers between accounts</li>
+	<li>a user shall be able to follow the notifications and instructions provided with the transfer process by the application interface</li>
+</ul>
+
+
+<p><b>Dependencies:</b> </p>
+<ul>
+	<li>a user shall be able to perform money transfers only by having it on the account 'from'</li>
+	<li>a user is not able to transfer money from account 'from' by having on it zero or negative amount in respective currency</li>
+	<li>a transfer shall consist of correctly selected elements for the successful transaction to be fulfilled</li>
+	<li>the operation can be provided only due to the availability of internet connection</li>
+	<li>a user shall have registered his phone number as a 'banking number' so to be able to receive verification messages sent to it by the bank</li>
+	<li>a user cannot transfer money from a currency A to an account with the currency B, for successful transaction start the currencies should correspond</li>
+</ul>
+
+
+<p><b>Acceptance Criteria</b></p>
+<ul>
+	<li>after selecting 'transfer' a transfer window should load with the 'from' account on the left side and 'to' account on the right side of the window</li>
+	<li>each of the accounts shall allow the user to select accounts involved by manual selection from a dropdown list</li>
+	<li>each of the accounts shall describe the amount available on them in the currency of account</li>
+	<li>there should be a field for manual input of transfer amount in the context of account 'from'</li>
+	<li>there should be a 'submit' UI element in the transfer window</li>
+	<li>there should be a 'transaction successful' message following the successful transaction appearing after the user pressed 'submit' UI element having all the details of the transfer inserted correctly</li>
+</ul>
+
+
+<p> <b>Notes/Additional Artifacts:</b></p>
+<ul>
+	<li>the allocation and style of 'submit' UI element - TBD</li>
+	<li>the verification mechanism for money transfers - TBD</li>
+</ul>
+
+
+<p><b>Links:</b></p>
+
+<p><b>Vision and Scope -</b> <a href="https://drive.google.com/file/d/1c0kZtGv15G-dk-K5tWErUJE-KwOssoDD/view?usp=sharing" class="external-link" target="_blank" rel="nofollow noopener">https://drive.google.com/file/d/1c0kZtGv15G-dk-K5tWErUJE-KwOssoDD/view?usp=sharing</a></p>
             <br/>
         </td>
     </tr>
     </table>
 
-Generated at Sun May 30 21:49:47 EEST 2021 by Taras Khamardiuk using Jira 8.5.6#805006-sha1:4c63febd564848d8fbba7974be021da2081c1856.
+Generated at Fri Jun 18 16:44:32 EEST 2021 by Taras Khamardiuk using Jira 8.5.6#805006-sha1:4c63febd564848d8fbba7974be021da2081c1856.
 
 </body>
 </html>
