@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>[#ONBA1305-100] Transfer between user&#39;s account and a third-party RBA account</title>
+    <title>[#ONBA1305-99] Transfer between user&#39;s card and a third-party card</title>
     <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
         <style type="text/css">
 
@@ -78,7 +78,7 @@ hr.fullcontent
     <tr>
         <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
                             <h3 class="formtitle">
-                        [ONBA1305-100]&nbsp;<a href="https://jira.ithillel.com/browse/ONBA1305-100">Transfer between user&#39;s account and a third-party RBA account</a>
+                        [ONBA1305-99]&nbsp;<a href="https://jira.ithillel.com/browse/ONBA1305-99">Transfer between user&#39;s card and a third-party card</a>
             <span class="subText">
                Created: 15/Jun/21                   &nbsp;Updated: 15/Jun/21
 
@@ -172,8 +172,8 @@ hr.fullcontent
         <td bgcolor="#f0f0f0" width="20%">
             <b>Labels:</b>
         </td>
-        <td id="labels-23759-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
-                            RBA, ROMA, account                    </td>
+        <td id="labels-23758-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            RBA, ROMA, account, card-transfer, transfer                    </td>
     </tr>
     
     	<tr>
@@ -260,7 +260,7 @@ hr.fullcontent
 
                         <tr>
                 <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
-                <td id="customfield_10102-23759-value" class="value" bgcolor="#ffffff" width="80%">
+                <td id="customfield_10102-23758-value" class="value" bgcolor="#ffffff" width="80%">
     <a class="aui-label ghx-label-5" href="https://jira.ithillel.com/browse/ONBA1305-94">
         MobBankApp: Account Operations
     </a>
@@ -268,11 +268,11 @@ hr.fullcontent
             </tr>
                                 <tr>
                 <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
-                <td id="customfield_10101-23759-value" class="value" bgcolor="#ffffff" width="80%">Доска Sprint 1</td>
+                <td id="customfield_10101-23758-value" class="value" bgcolor="#ffffff" width="80%">Доска Sprint 1</td>
             </tr>
                                 <tr>
                 <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Story Points:</b></td>
-                <td id="customfield_10106-23759-value" class="value" bgcolor="#ffffff" width="80%">    8
+                <td id="customfield_10106-23758-value" class="value" bgcolor="#ffffff" width="80%">    8
 </td>
             </tr>
             </table>
@@ -292,11 +292,11 @@ hr.fullcontent
     <tr>
         <td id="descriptionArea">
             <p><b>Context:</b> <br/>
- After successful authorization, a user shall select 'money transfer' so to be able to perform operations with funds available on accounts owned by transferring the money from it to the third-party RBA accounts. The procedure shall provide the selection of the account 'from' together with account 'to', sum of transfer to be inserted (typed manually) by user, the 'to' account number to be inserted by user, and 'submit' UI element. A user shall verify the transfer by available verification mechanism so to finalize the transfer between accounts owned.</p>
+ After successful authorization, a user shall select 'money transfer' so to be able to perform operations with funds available on card accounts owned by transferring the money from it to the third-party card accounts. The procedure shall provide the selection of the card account 'from' together with card account 'to', the sum of transfer to be inserted (typed manually) by the user, the 'to' card number to be inserted by the user, and 'submit' UI element. A user shall verify the transfer by an available verification mechanism so to finalize the transfer between accounts owned.</p>
 
 <p><b>Story:</b></p>
 
-<p>As a bank customer, I want to be able to transfer funds between my account and a third-party RBA account, so to be able to make transfers directly in the application.</p>
+<p>As a bank customer, I want to be able to transfer funds between my card account and a third-party card account, so to be able to make transfers directly in the application.</p>
 
 <p><b>Preconditions:</b></p>
 <ul>
@@ -306,8 +306,8 @@ hr.fullcontent
 	<li>registered user</li>
 	<li>successfully verified bank profile</li>
 	<li>successful authorization in the application</li>
-	<li>possession of an active account by the user</li>
-	<li>correct details of a third-party RBA bank account</li>
+	<li>possession of an active account by user</li>
+	<li>correct details of a third-party bank account</li>
 </ul>
 
 
@@ -322,10 +322,10 @@ hr.fullcontent
 
 <p><b>Dependencies:</b> </p>
 <ul>
-	<li>a user shall be able to perform money transfers only by having it on the account 'from'</li>
-	<li>a user is not able to transfer money from account 'from' by having on it zero or negative amount in respective currency</li>
-	<li>a transfer shall consist of correctly selected elements for the successful transaction to be fulfilled</li>
-	<li>the operation can be provided only due to the availability of an internet connection</li>
+	<li>a user shall be able to perform money transfers only by having it on the card account 'from'</li>
+	<li>a user is not able to transfer money from an account 'from' by having on it zero or negative amount in the respective currency</li>
+	<li>a transfer shall consist of correctly selected elements for the successful transaction to be fulfilled, like 16-digit card number of a receiver</li>
+	<li>the operation can be provided only due to the availability of internet connection</li>
 	<li>a user shall have registered his phone number as a 'banking number' so to be able to receive verification messages sent to it by the bank</li>
 	<li>a user cannot transfer money from a currency A to an account with the currency B, for successful transaction start the currencies should correspond</li>
 </ul>
@@ -334,12 +334,12 @@ hr.fullcontent
 <p><b>Acceptance Criteria</b></p>
 <ul>
 	<li>after selecting 'transfer' a transfer window should load with the 'from' account on the left side and 'to' account on the right side of the window</li>
-	<li>left-side account shall allow the user to select the account involved by manual selection from a dropdown list</li>
-	<li>right-side account details shall include the account number in the respective format (TBD)</li>
-	<li>left-side account shall describe the amount available on it in the currency of the account</li>
+	<li>left-side account shall allow the user to select account involved by manual selection from a dropdown list</li>
+	<li>right-side account details shall include the card number in the respective format (TBD)</li>
+	<li>left-side account shall describe the amount available on it in the currency of account</li>
 	<li>there should be a field for manual input of transfer amount in the context of account 'from'</li>
 	<li>there should be a 'submit' UI element in the transfer window</li>
-	<li>there should be a 'transaction successful' message following the successful transaction appearing after the user pressed the 'submit' UI element having all the details of the transfer inserted correctly</li>
+	<li>there should be a 'transaction successful' message following the successful transaction appearing after the user pressed 'submit' UI element having all the details of the transfer inserted correctly</li>
 </ul>
 
 
@@ -348,7 +348,6 @@ hr.fullcontent
 	<li>the allocation and style of 'submit' UI element - TBD</li>
 	<li>the verification mechanism for money transfers - TBD</li>
 	<li>commission message - TBD</li>
-	<li>receipt forming - TBD</li>
 </ul>
 
 
@@ -360,7 +359,7 @@ hr.fullcontent
     </tr>
     </table>
 
-Generated at Fri Jun 18 16:44:03 EEST 2021 by Taras Khamardiuk using Jira 8.5.6#805006-sha1:4c63febd564848d8fbba7974be021da2081c1856.
+Generated at Fri Jun 18 16:44:23 EEST 2021 by Taras Khamardiuk using Jira 8.5.6#805006-sha1:4c63febd564848d8fbba7974be021da2081c1856.
 
 </body>
 </html>
